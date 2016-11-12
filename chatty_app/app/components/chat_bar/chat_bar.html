@@ -1,2 +1,2 @@
-<input id="username" type="text" placeholder="Your Name (Optional)" />
-<input id="new-message" type="text" on-enter="sendMessage()" placeholder="Type a message and hit ENTER" />
+<input id="username" type="text" ng-model="username" placeholder="Your Name (Optional)" />
+<input id="new-message" type="text" ng-model="content" on-enter="sendMessage({username, content})" placeholder="Type a message and hit ENTER" />
