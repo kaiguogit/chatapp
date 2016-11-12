@@ -9,7 +9,7 @@ angular.module('myApp.message', [])
         },
         templateUrl: 'components/message_list/message/message.html',
         link: function(scope) {
-            console.log(scope);
+            console.log("message component scope is", scope);
         }
     }
 })

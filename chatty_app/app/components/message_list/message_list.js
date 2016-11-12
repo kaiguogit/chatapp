@@ -7,23 +7,8 @@ angular.module('myApp.messageList', [])
         controller: 'messageListCtrl'
     }
 })
-.controller('messageListCtrl', ['$scope', function($scope){
-    $scope.messages = [
-        {
-            username: "user1",
-            content: "content1"
-        },
-        {
-            username: "user2",
-            content: "content2"
-        },
-        {
-            username: "user3",
-            content: "content3"
-        },
-        {
-            username: "user4",
-            content: "content4"
-        }
-    ];
+.controller('messageListCtrl', ['$scope', 'chatService', function($scope, chatService){
+    chatService.getMessages();
+    $scope.ws = chatService.ws;
+    console.log($scope.ws);
 }]);
