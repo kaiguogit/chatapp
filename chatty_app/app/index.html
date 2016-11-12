@@ -33,15 +33,10 @@
     <nav>
       <h1>Chatty</h1>
     </nav>
-    <div id="message-list">
-      <div class="message">
-        <span class="username">Anonymous1</span>
-        <span class="content">I won't be impressed with technology until I can download food.</span>
-      </div>
-      <div class="message system">
-        Anonymous1 changed their name to nomnom.
-      </div>
-    </div>
+    <message-list></message-list>
+    <footer>
+        <chat-bar></chat-bar>
+    </footer>
   </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -54,5 +49,9 @@
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
+  <script src="components/chat_bar/chat_bar.js"></script>
+  <script src="components/message_list/message_list.js"></script>
+  <script src="components/message_list/message/message.js"></script>
 </body>
 </html>
